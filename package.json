@@ -1,0 +1,18 @@
+{
+  "name": "atelier-back-end",
+  "version": "1.0.0",
+  "description": "This project brings you a full-fledged platform game website where you can discover and play a variety of captivating games. It offers a streamlined user experience with features that cater to both solo adventurers and collaborative players:",
+  "main": "index.js",
+  "scripts": {
+    "back": "node backend/app.js",
+    "server": "nodemon backend/app.js",
+    "client": "npm run start --prefix frontend",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
